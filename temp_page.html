@@ -1,0 +1,2323 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="/static/img/favicon-256.png?v=1">
+    <link rel="apple-touch-icon" sizes="64x64" href="/static/img/favicon-64.png?v=1"/>
+    <link rel="apple-touch-icon" sizes="128x128" href="/static/img/favicon-128.png?v=1"/>
+    <link rel="apple-touch-icon" sizes="256х256" href="/static/img/favicon-256.png?v=1"/>
+    <link rel="shortcut icon" href="/static/img/favicon-32.ico" type="image/x-icon"/>
+    <link rel="icon" type="image/png" href="/static/img/favicon-64.png?v=1" sizes="64x64">
+    <link rel="icon" type="image/png" href="/static/img/favicon-128.png?v=1" sizes="128x128">
+    <link rel="icon" type="image/png" href="/static/img/favicon-256.png?v=1" sizes="256х256">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.min.css?v=13">
+    
+    
+        
+            <title>Union Auto</title>
+        
+    
+    
+    
+
+
+    <link rel="image_src" href="https://unionauto.org/static/img/og-image.png?v=1">
+    <meta itemprop="image" property="og:image" content="https://unionauto.org/static/img/og-image.png?v=1">
+    <meta itemprop="image" property="og:image:secure_url" content="https://unionauto.org/static/img/og-image.png?v=1">
+    <meta itemprop="image" property="og:image:width" content="1126">
+    <meta itemprop="image" property="og:image:height" content="590">
+    <meta itemprop="image" property="vk:image" content="https://unionauto.org/static/img/og-image.png?v=1"/>
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Union Auto">
+    <meta property="og:url" content="https://unionauto.org">
+    <meta property="og:locale" content="ru_RU">
+
+    <meta name="yandex-verification" content="42c91d81080fd018"/>
+    <meta name="google-site-verification" content="FWrQRtLUl9sopwu4HKFZCNdZtyC9iR18BkuNeUjYggI"/>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(91395761, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/91395761" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <style>
+      .sanctioned-badge{position:absolute;top:10px;left:0;z-index:2;background:#c0392b;color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:0 4px 4px 0;line-height:1.3;cursor:pointer}
+      .sanctioned-label{display:inline-flex;align-items:center;gap:6px;color:#C9272E;font-weight:400;font-size:14px;line-height:20px;margin-bottom:8px;cursor:pointer;position:relative}
+      .sanctioned-label svg{flex-shrink:0}
+      [data-tooltip]::after{content:attr(data-tooltip);position:absolute;bottom:calc(100% + -130px);left:0;background:#333;color:#fff;font-size:12px;line-height:1.4;font-weight:400;padding:8px 12px;border-radius:6px;max-width:calc(100vw - 32px);width:120%;box-sizing:border-box;white-space:normal;opacity:0;pointer-events:none;transition:opacity .2s;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+      [data-tooltip]:hover::after{opacity:1}
+      .calc-block{background:#f8f8f8;border-radius:8px;padding:24px;margin-top:24px}
+      .calc-block__title{font-size:1.25rem;font-weight:700;margin-bottom:16px}
+      .calc-rates{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;padding:12px;background:#fff;border-radius:8px;border:1px solid #eee}
+      .calc-rate{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;background:#f7f7f7;border-radius:999px;line-height:1}
+      .calc-rate__label{font-size:12px;color:#777}
+      .calc-rate__value{font-size:12px;font-weight:700;color:#222;white-space:nowrap}
+      .calc-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #e8e8e8}
+      .calc-row:last-child{border-bottom:none}
+      .calc-row__label{font-size:14px;color:#333}
+      .calc-row__value{font-size:14px;font-weight:600;color:#333;white-space:nowrap}
+      .calc-row--total{border-top:2px solid #333;border-bottom:none;padding-top:14px;margin-top:4px}
+      .calc-row--total .calc-row__label,.calc-row--total .calc-row__value{font-size:16px;font-weight:700}
+      .calc-spoiler{cursor:pointer;user-select:none}
+      .calc-spoiler__toggle{display:flex;align-items:center;gap:6px;font-size:14px;color:#333;font-weight:600;padding:10px 0;border-bottom:1px solid #e8e8e8}
+      .calc-spoiler__toggle::after{content:'▼';font-size:10px;transition:transform .2s}
+      .calc-spoiler.is-open .calc-spoiler__toggle::after{transform:rotate(180deg)}
+      .calc-spoiler__content{display:none;padding-left:16px}
+      .calc-spoiler.is-open .calc-spoiler__content{display:block}
+      .calc-spoiler__content .calc-row{font-size:13px;padding:6px 0}
+      .calc-spoiler__content .calc-row__label{color:#666}
+      .vladivostok-price-box{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:16px 0;border-top:1px solid #e8e8e8;width:100%}
+      .vladivostok-price-box__left{display:flex;flex-direction:column;gap:2px}
+      .vladivostok-price-box__right{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+      .vladivostok-price-box__label{font-size:14px;color:#666}
+      .vladivostok-price-box__currency{font-size:1.1rem;font-weight:600;color:#333}
+      .vladivostok-price-box__price{font-size:1.35rem;font-weight:700;color:#333}
+      .calc-anchor-link{display:block;text-align:right;font-size:14px;color:#666;text-decoration:underline;text-underline-offset:3px;transition:color .2s;margin-top:10px;font-weight: 600;}
+      .calc-anchor-link:hover{color:#333}
+    </style>
+    
+</head>
+
+<body>
+
+<div class="wrapper">
+    <main class="main">
+        
+        
+
+        
+
+
+<div class="headerInner">
+  <header class="header header--main" id="header">
+
+    <div class="headerW d-flex align-items-center justify-content-between flex-row flex-lg-column flex-xl-row gap-2">
+      <a href="/" class="headerLogo logo">
+        <img src="/static/img/admin/logo/logo.svg?v=3" alt="logo">
+      </a>
+      <nav class="headerNav nav">
+        <div class="container">
+          <div class="d-flex py-2 d-lg-none justify-content-between align-items-center border-b-gray-3 px-3">
+            <a href="/" class="headerLogo logo">
+              <img src="/static/img/admin/logo/logo.svg?v=3" alt="logo">
+            </a>
+            <div class="headerNavCloseBtn"><img src="/static/img/icons/close.svg?v=1" alt="close"></div>
+          </div>
+
+          
+
+<!-- Desk -->
+<ul class="navList gap-0 gap-lg-3 gap-xxl-4 d-none d-lg-flex">
+    <li>
+        <a href="/catalog/japan/" >Авто из Японии</a>
+    </li>
+    <li>
+        <a href="/catalog/korea/" >Авто из Кореи</a>
+    </li>
+    <li>
+        <a href="/catalog/truck/" >Грузовики</a>
+    </li>
+    <li class="menu-dropdownitem">
+        <a class="menu-dropdownitem-link " href="/services/">Услуги</a>
+        <div class="menu-dropdownitem-list">
+            <ul>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/auction/japan/">
+                    Авто из Японии
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/auction/korea/">
+                    Авто из Кореи
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/auction/china/">
+                    Авто из Китая
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/auction/machinery/">
+                    Спецтехника из Японии
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/auction/tax/">
+                    Ввоз под полную пошлину
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/auction/vladivostok/">
+                    Доставка в регионы
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li class="menu-dropdownitem">
+        <a class="menu-dropdownitem-link active" href="/about/">Компания</a>
+        <div class="menu-dropdownitem-list">
+            <ul>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/about/">
+                    О нас
+                    </a>
+                </li>
+                
+                    <li class="menu-dropdownitem-list-el active">
+                        <a href="/stock-auto/">
+                        Авто в наличии
+                        </a>
+                    </li>
+                
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/experience/">
+                    Привезенные авто
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/articles/">
+                    Новости и статьи
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/video/">
+                    Наши видеообзоры
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/reviews/">
+                    Отзывы
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/contacts/">
+                    Контакты
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+</ul>
+          
+
+<!-- Mob -->
+<ul class="navList gap-0 gap-lg-3 gap-xxl-4 d-lg-none accordion" id="accordionMenu">
+    <li>
+        <a href="/catalog/japan/" >Авто из Японии</a>
+    </li>
+    <li>
+        <a href="/catalog/korea/" >Авто из Кореи</a>
+    </li>
+    <li>
+        <a href="/catalog/truck/" >Грузовики</a>
+    </li>
+
+    <li class="menu-dropdownitem accordion-item">
+        <a class="menu-dropdownitem-link collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        Услуги
+        </a>
+        <div class="menu-dropdownitem-list accordion-collapse collapse" id="collapseTwo" data-bs-parent="#accordionMenu">
+            <ul class="accordion-body">
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/auction/japan/">
+                    Авто из Японии
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/auction/korea/">
+                    Авто из Кореи
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/auction/china/">
+                    Авто из Китая
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/auction/machinery/">
+                    Спецтехника из Японии
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/auction/tax/">
+                    Ввоз под полную пошлину
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/auction/vladivostok/">
+                    Доставка в регионы
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/services/">
+                    Все услуги
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+
+    <li class="menu-dropdownitem accordion-item">
+        <a class="menu-dropdownitem-link collapsed active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Компания</a>
+        <div class="menu-dropdownitem-list accordion-collapse collapse" id="collapseThree" data-bs-parent="#accordionMenu">
+            <ul class="accordion-body">
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/about/">
+                    О нас
+                    </a>
+                </li>
+                
+                    <li class="menu-dropdownitem-list-el active">
+                        <a href="/stock-auto/">
+                        Авто в наличии
+                        </a>
+                    </li>
+                
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/experience/">
+                    Привезенные авто
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/articles/">
+                    Новости и статьи
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/video/">
+                    Наши видеообзоры
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/reviews/">
+                    Отзывы
+                    </a>
+                </li>
+                <li class="menu-dropdownitem-list-el ">
+                    <a href="/contacts/">
+                    Контакты
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+
+</ul>
+
+          <div class="d-flex d-lg-none justify-content-between align-items-center gap-2 px-3 py-4">
+            <div class="d-flex flex-column gap-2">
+              <span class="fw-medium text--sm text-white">Мы в соцсетях:</span>
+              <ul class="d-flex gap-3 socials socials--white">
+                <li>
+                  <a href="https://vk.com/unionauto_org" target="_blank">
+                    <svg>
+                      <use xlink:href="/static/img/icons/icons.svg?v=1#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://youtube.com/@unionauto125?si=Z8KSysAUg7h9c0e3" target="_blank">
+                    <svg>
+                      <use xlink:href="/static/img/icons/icons.svg?v=1#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/unionauto_org?igsh=OHF4eDdrOW1nbWlz" target="_blank">
+                    <svg>
+                      <use xlink:href="/static/img/icons/icons.svg?v=1#insta"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <span class="fw-medium text--sm text-white">Свяжитесь с нами:</span>
+              <ul class="d-flex gap-3 socials socials--white">
+                <li>
+                  <a href="https://vk.com/unionauto_org" target="_blank">
+                    <svg>
+                      <use xlink:href="/static/img/icons/icons.svg?v=1#vk-call"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/+79510068050" target="_blank">
+                    <svg>
+                      <use xlink:href="/static/img/icons/icons.svg?v=1#whatsapp-call"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://t.me/+79510068050" target="_blank">
+                    <svg>
+                      <use xlink:href="/static/img/icons/icons.svg?v=1#telegram-call"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex d-lg-none gap-1 px-3 mt-2">
+            <img src="/static/img/icons/phone-white.svg?v=1" alt="phone">
+            <div class="headerContacts d-flex flex-column">
+              <a href="tel:88006007966" class="headerPhone headerPhone--lg">88006007966</a>
+              <span>Звонок по России бесплатно</span>
+            </div><!-- /headerContacts -->
+          </div>
+          <div class="d-flex d-lg-none px-3 pt-2 mt-4">
+            <button class="button button--brown w-100" data-src="#modalOrder" data-fancybox onclick="ym(91395761,'reachGoal','view'); return true;">
+              Задать вопрос консультанту
+            </button>
+          </div>
+
+        </div>
+
+      </nav>
+      <div class="d-none d-lg-flex gap-1">
+        <img src="/static/img/icons/phone.svg?v=1" alt="phone">
+        <div class="headerContacts d-flex flex-column">
+          <a href="tel:88006007966" class="headerPhone">88006007966</a>
+          <span>Звонок по России бесплатно</span>
+        </div><!-- /headerContacts -->
+      </div>
+      <div class="hamburger" id="toggle">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </div><!-- /Hamburger Menu -->
+
+      <button class="button button--brown d-none d-lg-flex" data-src="#modalOrder" data-fancybox onclick="ym(91395761,'reachGoal','view'); return true;">Задать
+        вопрос</button>
+    </div>
+
+  </header>
+</div>
+
+        
+<style>
+  .videobox {
+    height: 600px; /* Высота по умолчанию */
+  }
+
+  @media (max-width: 1400px) {
+    .videobox {
+      height: 450px; /* Высота для экранов до 1400px */
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .videobox {
+      height: 350px; /* Высота для экранов до 1199px */
+    }
+  }
+
+  @media (max-width: 991px) {
+    .videobox {
+      height: 450px; /* Высота для экранов до 991px */
+    }
+  }
+
+  @media (max-width: 767px) {
+    .videobox {
+      height: 350px; /* Высота для экранов до 767px */
+    }
+  }
+
+  @media (max-width: 575px) {
+    .videobox {
+      height: 80vw; /* Высота для экранов до 575px */
+    }
+  }
+</style>
+      <div class="breadcrumbsW pb-4 pt-4">
+ <div class="container">
+    <div class="breadcrumbs d-flex gap-2 mb-0">
+    <a href="/">Главная</a>
+    
+        
+        
+            <span class="sep">/</span>
+            <a href="/about/">Компания</a>
+        
+    
+
+    
+        
+        
+            <span class="sep">/</span>
+            <a href="/stock-auto/">Авто в наличии</a>
+        
+    
+
+    
+        
+            <span class="sep bread-current">/</span>
+            <span class="bread-current">Автобетононасос HINO PROFIA с установкой  26 метров</span>
+        
+    
+
+    
+    </div>
+  </div>
+</div>
+
+			<section class="sect py-0 productSect">
+  <div class="container">
+    <h1 class="h1 productTitle">Автобетононасос HINO PROFIA с установкой  26 метров</h1>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="productSliderW">
+          <div class="swiper productSlider">
+            <div class="swiper-wrapper">
+
+              <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/dc/64/dc645e59-8a52-4947-8c9c-059d0eb5eef8/photo_2025-04-09_09-47-34_2.jpg">
+                <img src="/media/filer_public/dc/64/dc645e59-8a52-4947-8c9c-059d0eb5eef8/photo_2025-04-09_09-47-34_2.jpg" alt="image" loading="lazy">
+              </a>
+              
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/58/21/582191f3-6c86-4e10-be63-48351cb0e2a7/photo_2025-04-09_09-47-33_3.jpg">
+                    <img src="/media/filer_public/58/21/582191f3-6c86-4e10-be63-48351cb0e2a7/photo_2025-04-09_09-47-33_3.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/5b/fa/5bfa9ab7-9bd5-4bae-9a33-29a97f5a6d3f/photo_2025-04-09_09-47-33.jpg">
+                    <img src="/media/filer_public/5b/fa/5bfa9ab7-9bd5-4bae-9a33-29a97f5a6d3f/photo_2025-04-09_09-47-33.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/d3/c1/d3c1c6fc-5d56-4c6a-9292-30f6e91bf195/photo_2025-04-09_09-47-34_2.jpg">
+                    <img src="/media/filer_public/d3/c1/d3c1c6fc-5d56-4c6a-9292-30f6e91bf195/photo_2025-04-09_09-47-34_2.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/47/70/47709dcc-2935-4188-9e7b-68677743bb91/photo_2025-04-09_09-47-34_3.jpg">
+                    <img src="/media/filer_public/47/70/47709dcc-2935-4188-9e7b-68677743bb91/photo_2025-04-09_09-47-34_3.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/47/1d/471d0bde-eabe-479d-8960-03a32c580e03/photo_2025-04-09_09-47-34.jpg">
+                    <img src="/media/filer_public/47/1d/471d0bde-eabe-479d-8960-03a32c580e03/photo_2025-04-09_09-47-34.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/05/6d/056dceb3-f3e6-4807-bd1e-2e30b735c1c7/photo_2025-04-09_09-47-36_2.jpg">
+                    <img src="/media/filer_public/05/6d/056dceb3-f3e6-4807-bd1e-2e30b735c1c7/photo_2025-04-09_09-47-36_2.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/f5/bb/f5bbfc87-a671-486c-8627-c508195d2a8c/photo_2025-04-09_09-47-35.jpg">
+                    <img src="/media/filer_public/f5/bb/f5bbfc87-a671-486c-8627-c508195d2a8c/photo_2025-04-09_09-47-35.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/08/9a/089a75a4-f85a-41b3-b221-50b259478fe1/photo_2025-04-09_09-47-36_3.jpg">
+                    <img src="/media/filer_public/08/9a/089a75a4-f85a-41b3-b221-50b259478fe1/photo_2025-04-09_09-47-36_3.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/17/f3/17f3e552-5de0-47d4-a33d-818f00bfa266/photo_2025-04-09_09-47-36.jpg">
+                    <img src="/media/filer_public/17/f3/17f3e552-5de0-47d4-a33d-818f00bfa266/photo_2025-04-09_09-47-36.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/eb/3c/eb3ce97e-7106-4140-be97-2113beef016c/photo_2025-04-09_09-47-37_2.jpg">
+                    <img src="/media/filer_public/eb/3c/eb3ce97e-7106-4140-be97-2113beef016c/photo_2025-04-09_09-47-37_2.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/ca/e1/cae1f5f3-3af7-4ae8-9097-801ad50b9048/photo_2025-04-09_09-47-37.jpg">
+                    <img src="/media/filer_public/ca/e1/cae1f5f3-3af7-4ae8-9097-801ad50b9048/photo_2025-04-09_09-47-37.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/8b/36/8b36eac4-32c8-40ea-9f39-7d97879f4773/photo_2025-04-09_09-47-39_2.jpg">
+                    <img src="/media/filer_public/8b/36/8b36eac4-32c8-40ea-9f39-7d97879f4773/photo_2025-04-09_09-47-39_2.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/f2/8d/f28d105f-7c0b-4794-beee-28d1e1c3e165/photo_2025-04-09_09-47-38_2.jpg">
+                    <img src="/media/filer_public/f2/8d/f28d105f-7c0b-4794-beee-28d1e1c3e165/photo_2025-04-09_09-47-38_2.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/a9/24/a924e3d7-32c5-45d0-898b-d290091bb0a7/photo_2025-04-09_09-47-38.jpg">
+                    <img src="/media/filer_public/a9/24/a924e3d7-32c5-45d0-898b-d290091bb0a7/photo_2025-04-09_09-47-38.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/4e/1f/4e1febe9-57df-44fb-ae9b-0c3ef21a1a0d/photo_2025-04-09_09-47-39_3.jpg">
+                    <img src="/media/filer_public/4e/1f/4e1febe9-57df-44fb-ae9b-0c3ef21a1a0d/photo_2025-04-09_09-47-39_3.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/f0/7e/f07e64a6-6887-4583-84bb-681876434111/photo_2025-04-09_09-47-39.jpg">
+                    <img src="/media/filer_public/f0/7e/f07e64a6-6887-4583-84bb-681876434111/photo_2025-04-09_09-47-39.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/fa/08/fa08dc71-2b7a-4cd8-9853-b119a03028b4/photo_2025-04-09_09-47-40_3.jpg">
+                    <img src="/media/filer_public/fa/08/fa08dc71-2b7a-4cd8-9853-b119a03028b4/photo_2025-04-09_09-47-40_3.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/4b/61/4b618e7f-f0b9-47c7-ba09-3745311a134f/photo_2025-04-09_09-47-40.jpg">
+                    <img src="/media/filer_public/4b/61/4b618e7f-f0b9-47c7-ba09-3745311a134f/photo_2025-04-09_09-47-40.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/88/c1/88c18d2c-3c29-47b3-a4bd-af083b905156/photo_2025-04-09_09-47-40_2.jpg">
+                    <img src="/media/filer_public/88/c1/88c18d2c-3c29-47b3-a4bd-af083b905156/photo_2025-04-09_09-47-40_2.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <a class="swiper-slide productSlide" data-fancybox="gallery" href="/media/filer_public/ec/9b/ec9b9d5f-ad2a-49c3-9782-7091a431b5e5/photo_2025-04-09_09-47-33_2.jpg">
+                    <img src="/media/filer_public/ec/9b/ec9b9d5f-ad2a-49c3-9782-7091a431b5e5/photo_2025-04-09_09-47-33_2.jpg" alt="image" loading="lazy">
+                  </a>
+                
+              
+                
+                  <div class="swiper-slide videoSlide" href="/media/filer_public/9f/e0/9fe0586e-e778-43c3-916c-e24d09cbe08f/whatsapp_video_2025-04-09_at_102439.mp4" data-fancybox="gallery">
+                    <div class="videoSlideImg videobox" style="background-image: url(/media/filer_public/dc/64/dc645e59-8a52-4947-8c9c-059d0eb5eef8/photo_2025-04-09_09-47-34_2.jpg);">
+                      <button class="videoSlideBtn">
+                        <img src="/static/img/icons/play-blue.svg?v=1" alt="play">
+                      </button>
+                    </div>
+                  </div>
+                
+              
+
+            </div>
+            <div class="productSliderNav">
+              <button class="navArrow navArrowPrev">
+  <svg>
+    <use xlink:href="/static/img/icons/icons.svg?v=1#arrow-prev"></use>
+  </svg>
+</button>
+<button class="navArrow navArrowNext">
+  <svg>
+    <use xlink:href="/static/img/icons/icons.svg?v=1#arrow-next"></use>
+  </svg>
+</button>
+            </div>
+          </div>
+          <div class="swiper productThumbSlider">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide productThumbSlide">
+                <img src="/media/filer_public/dc/64/dc645e59-8a52-4947-8c9c-059d0eb5eef8/photo_2025-04-09_09-47-34_2.jpg" alt="image">
+              </div><!-- /finishedPhotoThumbSlide -->
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/58/21/582191f3-6c86-4e10-be63-48351cb0e2a7/photo_2025-04-09_09-47-33_3.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/5b/fa/5bfa9ab7-9bd5-4bae-9a33-29a97f5a6d3f/photo_2025-04-09_09-47-33.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/d3/c1/d3c1c6fc-5d56-4c6a-9292-30f6e91bf195/photo_2025-04-09_09-47-34_2.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/47/70/47709dcc-2935-4188-9e7b-68677743bb91/photo_2025-04-09_09-47-34_3.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/47/1d/471d0bde-eabe-479d-8960-03a32c580e03/photo_2025-04-09_09-47-34.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/05/6d/056dceb3-f3e6-4807-bd1e-2e30b735c1c7/photo_2025-04-09_09-47-36_2.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/f5/bb/f5bbfc87-a671-486c-8627-c508195d2a8c/photo_2025-04-09_09-47-35.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/08/9a/089a75a4-f85a-41b3-b221-50b259478fe1/photo_2025-04-09_09-47-36_3.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/17/f3/17f3e552-5de0-47d4-a33d-818f00bfa266/photo_2025-04-09_09-47-36.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/eb/3c/eb3ce97e-7106-4140-be97-2113beef016c/photo_2025-04-09_09-47-37_2.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/ca/e1/cae1f5f3-3af7-4ae8-9097-801ad50b9048/photo_2025-04-09_09-47-37.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/8b/36/8b36eac4-32c8-40ea-9f39-7d97879f4773/photo_2025-04-09_09-47-39_2.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/f2/8d/f28d105f-7c0b-4794-beee-28d1e1c3e165/photo_2025-04-09_09-47-38_2.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/a9/24/a924e3d7-32c5-45d0-898b-d290091bb0a7/photo_2025-04-09_09-47-38.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/4e/1f/4e1febe9-57df-44fb-ae9b-0c3ef21a1a0d/photo_2025-04-09_09-47-39_3.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/f0/7e/f07e64a6-6887-4583-84bb-681876434111/photo_2025-04-09_09-47-39.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/fa/08/fa08dc71-2b7a-4cd8-9853-b119a03028b4/photo_2025-04-09_09-47-40_3.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/4b/61/4b618e7f-f0b9-47c7-ba09-3745311a134f/photo_2025-04-09_09-47-40.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/88/c1/88c18d2c-3c29-47b3-a4bd-af083b905156/photo_2025-04-09_09-47-40_2.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/ec/9b/ec9b9d5f-ad2a-49c3-9782-7091a431b5e5/photo_2025-04-09_09-47-33_2.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+                
+                  <div class="swiper-slide productThumbSlide">
+                    <img src="/media/filer_public/dc/64/dc645e59-8a52-4947-8c9c-059d0eb5eef8/photo_2025-04-09_09-47-34_2.jpg" alt="image" loading="lazy">
+                  </div>
+                
+              
+
+
+            </div>
+          </div>
+          <div class="productSocials d-flex gap-2 gap-xl-3">
+            <a href="https://youtube.com/@unionauto125?si=Z8KSysAUg7h9c0e3" target="_blank">
+              <img src="/static/img/admin/socials/icon-4.svg?v=1" alt="youtube">
+            </a>
+            <a href="https://t.me/+79510068050" target="_blank">
+              <img src="/static/img/admin/socials/icon-5.svg?v=1" alt="tg">
+            </a>
+          </div><!-- /productSocials -->
+        </div>
+      </div>
+      <div class="col-lg-6 mt-2 mt-lg-0">
+        <div class="board bg--gray1">
+          <div class="paramList pb-4 paramList--border-b">
+
+            
+              <div class="paramItem">
+                <div class="paramItemName">Год выпуска</div>
+                <div class="paramItemText">2001 г.</div>
+              </div><!-- /paramItem -->
+            
+            
+              <div class="paramItem">
+                <div class="paramItemName">Пробег</div>
+                <div class="paramItemText">
+                  180 000 км</div>
+              </div><!-- /paramItem -->
+            
+            
+            
+              <div class="paramItem">
+                <div class="paramItemName">Тип двигателя</div>
+                <div class="paramItemText">дизель</div>
+              </div><!-- /paramItem -->
+            
+            
+              <div class="paramItem">
+                <div class="paramItemName">Объем двигателя</div>
+                <div class="paramItemText">10520 см³</div>
+              </div><!-- /paramItem -->
+            
+            
+              <div class="paramItem">
+                <div class="paramItemName">Мощность</div>
+                <div class="paramItemText">380 л.с</div>
+              </div><!-- /paramItem -->
+            
+            
+              <div class="paramItem">
+                <div class="paramItemName">Привод</div>
+                <div class="paramItemText">4x2</div>
+              </div><!-- /paramItem -->
+            
+            
+              <div class="paramItem">
+                <div class="paramItemName">Трансмиссия</div>
+                <div class="paramItemText">механика</div>
+              </div><!-- /paramItem -->
+            
+            
+            
+              <div class="paramItem">
+                <div class="paramItemName">Город/регион</div>
+                <div class="paramItemText">Владивосток</div>
+              </div><!-- /paramItem -->
+            
+            
+              <div class="paramItem">
+                <div class="paramItemName">Ввоз</div>
+                <div class="paramItemText">Без Разбора</div>
+              </div><!-- /paramItem -->
+            
+
+          </div>
+
+          <div class="paramItem paramItem--line-sm-none align-items-end py-4 mb-0 flex-column flex-sm-row">
+            <div class="productTotalName mb-3 mb-sm-0">
+              Стоимость авто:*
+            </div>
+            <div class="paramItemText">
+              <div class="catalogCardPrice d-flex flex-column flex-wrap align-items-end gap-1 mt-1">
+                <span class="catalogCardPrice--main">10 000 000 ₽</span>
+              </div><!-- /catalogCardPrice -->
+            </div>
+          </div><!-- /paramItem -->
+
+          <div class="d-flex justify-content-between align-items-center gap-3">
+            <button class="button button--brown productBtn" data-src="#modalOrderBudget" data-fancybox onclick="ym(91395761,'reachGoal','view'); return true;" style="font-size: 0.9rem;">Подобрать под ваш бюджет</button>
+            <button class="button button--red productBtn" data-src="#modalOrder" data-fancybox onclick="ym(91395761,'reachGoal','view'); return true;">Оставить заявку</button>
+          </div>
+          <div class="text--sm text-end mt-3">*не является публичной офертой</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>		
+
+
+  <section class="sect" style="padding-bottom: 0px;">
+    <div class="container">
+      
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-xl-8">
+          <h3 class="h3 sectHead">
+            Подробнее об автомобиле
+          </h3>
+          <div class="content">
+            <p>Автобетононасос Hino Profia 2001 год<br>ДВС К11 10.520сс<br>Установка IHI 26 метров Zка, объём подачи 115м3 в час<br>Пробег 180.000км</p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-xl-4 mt-5 mt-lg-0">
+          <h3 class="h3 fw-semibold mb-4">Порядок работы</h3>
+    
+          <div class="accordion accordion-steps" id="accordion-steps">
+            <div class="accordion-item">
+              <h4 class="accordion-header h4" id="heading_1">
+                <button class="accordion-button collapsed d-flex gap-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse_1" aria-expanded="true" aria-controls="collapse_1">
+                  <img src="/static/img/icons/step-1.svg?v=1" alt="step-icon">
+                  <div class="d-flex gap-2 pt-2">
+                    <span>1.</span>
+                    Покупка автомобиля
+                  </div>
+    
+                </button>
+              </h4>
+              <div id="collapse_1" class="accordion-collapse collapse" aria-labelledby="heading_1">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <strong>Оплачиваете инвойс</strong> (счет, выставленный продавцом), который включает в себя
+                      стоимость авто, расходы на доставку.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item accordion-item--disabled">
+              <h2 class="accordion-header" id="heading_3">
+                <button class="accordion-button collapsed d-flex gap-3" type="button">
+                  <img src="/static/img/icons/step-3.svg?v=1" alt="step-icon">
+                  <div class="d-flex gap-2 pt-2">
+                    <span>2.</span>
+                    Передаем вам автомобиль или Отправляем его в ваш регион.
+                  </div>
+                </button>
+              </h2>
+            </div>
+          </div><!-- /accordion-steps -->
+
+
+      </div>  
+    </div>
+
+  </section>
+
+	
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lowQualityImages = document.querySelectorAll('.low-quality-image');
+
+        lowQualityImages.forEach(function(image) {
+            const lotId = image.getAttribute('data-bs-id')
+            const lotCategory = image.getAttribute('data-bs-category')
+
+            $.post("/image/transport/", 
+            {
+                "id": lotId,
+                "category": lotCategory
+            })
+            .done(function(response) {
+                if (response && response.link) {
+                    image.src = response.link
+                }
+            })
+        });
+        
+    })
+</script>
+
+  
+<section class="reviews sect reviewsSliderW">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center sectHead">
+        <h2><a class="h2 reviewsTitle pb-2 border-b-gray-4" href="/reviews/">Отзывы</a></h2>
+        <div class="sliderNav gap-2 d-none d-lg-flex">
+          <button class="navArrow navArrowPrev">
+            <svg>
+              <use xlink:href="/static/img/icons/icons.svg?v=1#arrow-prev"></use>
+            </svg>
+          </button>
+          <button class="navArrow navArrowNext">
+            <svg>
+              <use xlink:href="/static/img/icons/icons.svg?v=1#arrow-next"></use>
+            </svg>
+          </button>
+        </div><!-- /sliderNav -->
+      </div>
+
+      <div class="swiper reviewsSlider">
+        <div class="swiper-wrapper">
+          
+        
+          <div class="swiper-slide reviewsSlide">
+            <div class="reviewsCard cardText">
+              <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="/static/img/icons/avatar.svg?v=1" alt="person" class="reviewsCardPersonIcon">
+                  <div class="d-block">
+                    <span class="fw-medium d-block text--lg">Олег Яковина</span>
+                    <span class="fw-medium d-block text--15 color-gray5 ">11 ноября 2025</span>
+                  </div>
+                </div>
+                
+                    <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+                
+              </div>
+              <div class="content content--hidden my-1">
+                <p>Заказывал Nissan Note из Японии. Менеджер Дмитрий помог с подбором, сразу прислал фото и подробный отчёт. Всё честно и понятно, машина пришла в отличном состоянии. Доставка в короткие сроки, документы в полном порядке. Спасибо Union Auto, ребята знают своё дело.</p>
+              </div>
+              
+                <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+              
+              <button class="button button--white mt-3 reviewsCardBtn" data-src="#modalReviews"
+                data-bs-name="Олег Яковина"
+                data-bs-date="11 ноября 2025"
+                data-bs-id="277"
+                data-bs-text="<p>Заказывал Nissan Note из Японии. Менеджер Дмитрий помог с подбором, сразу прислал фото и подробный отчёт. Всё честно и понятно, машина пришла в отличном состоянии. Доставка в короткие сроки, документы в полном порядке. Спасибо Union Auto, ребята знают своё дело.</p>"
+                
+                    data-bs-screen="/media/filer_public/cd/45/cd45a3c6-aa16-42f6-be0f-1939155e32fd/screenshot_25.png"
+                
+                
+                    data-bs-source="/static/img/admin/reviews/2gis.svg?v=1"
+                
+                data-fancybox>Подробнее</button>
+            </div><!-- /reviewsCard -->
+          </div><!-- /reviewsSlide -->
+        
+          <div class="swiper-slide reviewsSlide">
+            <div class="reviewsCard cardText">
+              <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="/static/img/icons/avatar.svg?v=1" alt="person" class="reviewsCardPersonIcon">
+                  <div class="d-block">
+                    <span class="fw-medium d-block text--lg">Ольга Смирнова</span>
+                    <span class="fw-medium d-block text--15 color-gray5 ">11 ноября 2025</span>
+                  </div>
+                </div>
+                
+                    <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+                
+              </div>
+              <div class="content content--hidden my-1">
+                <p>Искала Тойоту из Японии с низким пробегом. Консультант помог выбрать комплектацию и быстро выкупить лот. Прислали много фото с аукциона, всё было очень прозрачно. Машина пришла точно в срок, состояние идеальное. Довольна этим опытом!</p>
+              </div>
+              
+                <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+              
+              <button class="button button--white mt-3 reviewsCardBtn" data-src="#modalReviews"
+                data-bs-name="Ольга Смирнова"
+                data-bs-date="11 ноября 2025"
+                data-bs-id="278"
+                data-bs-text="<p>Искала Тойоту из Японии с низким пробегом. Консультант помог выбрать комплектацию и быстро выкупить лот. Прислали много фото с аукциона, всё было очень прозрачно. Машина пришла точно в срок, состояние идеальное. Довольна этим опытом!</p>"
+                
+                    data-bs-screen="#"
+                
+                
+                    data-bs-source="/static/img/admin/reviews/2gis.svg?v=1"
+                
+                data-fancybox>Подробнее</button>
+            </div><!-- /reviewsCard -->
+          </div><!-- /reviewsSlide -->
+        
+          <div class="swiper-slide reviewsSlide">
+            <div class="reviewsCard cardText">
+              <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="/static/img/icons/avatar.svg?v=1" alt="person" class="reviewsCardPersonIcon">
+                  <div class="d-block">
+                    <span class="fw-medium d-block text--lg">Станислав Тригор</span>
+                    <span class="fw-medium d-block text--15 color-gray5 ">6 ноября 2025</span>
+                  </div>
+                </div>
+                
+                    <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+                
+              </div>
+              <div class="content content--hidden my-1">
+                <p>Брал семейный автомобиль. Понравилась и цена и хорошая комплектация. Отношение к клиентам вежливое. рекомендую обращаться.</p>
+              </div>
+              
+                <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+              
+              <button class="button button--white mt-3 reviewsCardBtn" data-src="#modalReviews"
+                data-bs-name="Станислав Тригор"
+                data-bs-date="6 ноября 2025"
+                data-bs-id="276"
+                data-bs-text="<p>Брал семейный автомобиль. Понравилась и цена и хорошая комплектация. Отношение к клиентам вежливое. рекомендую обращаться.</p>"
+                
+                    data-bs-screen="/media/filer_public/e2/18/e2188948-7c63-4fc4-b340-d1fb5dd6fc2a/screenshot_24.png"
+                
+                
+                    data-bs-source="/static/img/admin/reviews/2gis.svg?v=1"
+                
+                data-fancybox>Подробнее</button>
+            </div><!-- /reviewsCard -->
+          </div><!-- /reviewsSlide -->
+        
+          <div class="swiper-slide reviewsSlide">
+            <div class="reviewsCard cardText">
+              <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="/static/img/icons/avatar.svg?v=1" alt="person" class="reviewsCardPersonIcon">
+                  <div class="d-block">
+                    <span class="fw-medium d-block text--lg">Misha Kalugin</span>
+                    <span class="fw-medium d-block text--15 color-gray5 ">4 ноября 2025</span>
+                  </div>
+                </div>
+                
+                    <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+                
+              </div>
+              <div class="content content--hidden my-1">
+                <p>Заказывал Mazda CX-5 из Японии. Менеджер Дмитрий сразу понял, что нужно, нашёл отличный вариант с минимальным пробегом. Постоянно держал в курсе, отправлял фото и видео. Машина приехала раньше срока. Спасибо всей команде Union Auto!</p>
+              </div>
+              
+                <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+              
+              <button class="button button--white mt-3 reviewsCardBtn" data-src="#modalReviews"
+                data-bs-name="Misha Kalugin"
+                data-bs-date="4 ноября 2025"
+                data-bs-id="275"
+                data-bs-text="<p>Заказывал Mazda CX-5 из Японии. Менеджер Дмитрий сразу понял, что нужно, нашёл отличный вариант с минимальным пробегом. Постоянно держал в курсе, отправлял фото и видео. Машина приехала раньше срока. Спасибо всей команде Union Auto!</p>"
+                
+                    data-bs-screen="/media/filer_public/d7/fa/d7fa7e37-6ab8-48d3-b5ed-b051dd6cbf26/screenshot_23.png"
+                
+                
+                    data-bs-source="/static/img/admin/reviews/2gis.svg?v=1"
+                
+                data-fancybox>Подробнее</button>
+            </div><!-- /reviewsCard -->
+          </div><!-- /reviewsSlide -->
+        
+          <div class="swiper-slide reviewsSlide">
+            <div class="reviewsCard cardText">
+              <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="/static/img/icons/avatar.svg?v=1" alt="person" class="reviewsCardPersonIcon">
+                  <div class="d-block">
+                    <span class="fw-medium d-block text--lg">Арзу Каримов</span>
+                    <span class="fw-medium d-block text--15 color-gray5 ">2 ноября 2025</span>
+                  </div>
+                </div>
+                
+                    <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+                
+              </div>
+              <div class="content content--hidden my-1">
+                <p>Купил автомобиль из Кореи через данную компанию по гораздо выгодной цене, чем у других. И не разочаровался, наоборот. Спасибо большое менеджеру Ивану!!! Авто подбирали с учетом моих финансовой возможности и пожеланий! Оперативно сработали, при этом сопровождение и обратная связь были на каждом этапе и на высшем уровне! Иван, дополнительно помог по очень выгодной цене найти автовоз для доставки автомобиля в город назначения! Спасибо ребята за столь ответственный подход к работе!</p>
+              </div>
+              
+                <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+              
+              <button class="button button--white mt-3 reviewsCardBtn" data-src="#modalReviews"
+                data-bs-name="Арзу Каримов"
+                data-bs-date="2 ноября 2025"
+                data-bs-id="253"
+                data-bs-text="<p>Купил автомобиль из Кореи через данную компанию по гораздо выгодной цене, чем у других. И не разочаровался, наоборот. Спасибо большое менеджеру Ивану!!! Авто подбирали с учетом моих финансовой возможности и пожеланий! Оперативно сработали, при этом сопровождение и обратная связь были на каждом этапе и на высшем уровне! Иван, дополнительно помог по очень выгодной цене найти автовоз для доставки автомобиля в город назначения! Спасибо ребята за столь ответственный подход к работе!</p>"
+                
+                    data-bs-screen="/media/filer_public/75/57/7557a943-0cbe-4975-a701-8f05413fa2b7/2025-11-11_111226.jpg"
+                
+                
+                    data-bs-source="/static/img/admin/reviews/2gis.svg?v=1"
+                
+                data-fancybox>Подробнее</button>
+            </div><!-- /reviewsCard -->
+          </div><!-- /reviewsSlide -->
+        
+          <div class="swiper-slide reviewsSlide">
+            <div class="reviewsCard cardText">
+              <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="/static/img/icons/avatar.svg?v=1" alt="person" class="reviewsCardPersonIcon">
+                  <div class="d-block">
+                    <span class="fw-medium d-block text--lg">Антон Борисов</span>
+                    <span class="fw-medium d-block text--15 color-gray5 ">1 ноября 2025</span>
+                  </div>
+                </div>
+                
+                    <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+                
+              </div>
+              <div class="content content--hidden my-1">
+                <p>Отличный автосалон! Быстро подобрали идеальный автомобиль по моим критериям. Сделка прошла гладко, без лишних проволочек. Менеджеры вежливые и компетентные. Очень доволен покупкой!</p>
+              </div>
+              
+                <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+              
+              <button class="button button--white mt-3 reviewsCardBtn" data-src="#modalReviews"
+                data-bs-name="Антон Борисов"
+                data-bs-date="1 ноября 2025"
+                data-bs-id="274"
+                data-bs-text="<p>Отличный автосалон! Быстро подобрали идеальный автомобиль по моим критериям. Сделка прошла гладко, без лишних проволочек. Менеджеры вежливые и компетентные. Очень доволен покупкой!</p>"
+                
+                    data-bs-screen="/media/filer_public/19/b5/19b587a2-df16-43b8-accc-cc0a64b58d54/screenshot_22.png"
+                
+                
+                    data-bs-source="/static/img/admin/reviews/2gis.svg?v=1"
+                
+                data-fancybox>Подробнее</button>
+            </div><!-- /reviewsCard -->
+          </div><!-- /reviewsSlide -->
+        
+          <div class="swiper-slide reviewsSlide">
+            <div class="reviewsCard cardText">
+              <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="/static/img/icons/avatar.svg?v=1" alt="person" class="reviewsCardPersonIcon">
+                  <div class="d-block">
+                    <span class="fw-medium d-block text--lg">Виктория Антонова</span>
+                    <span class="fw-medium d-block text--15 color-gray5 ">30 октября 2025</span>
+                  </div>
+                </div>
+                
+                    <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+                
+              </div>
+              <div class="content content--hidden my-1">
+                <p>Покупала свой первый автомобиль, Hyundai Solaris из Кореи. Менеджер Андрей помог выбрать надежный вариант с хорошей комплектацией. Присылал подробные фото и видео каждой детали, честно указал на мелкие косметические недостатки. Машину пригнали в мой город точно в обещанную дату</p>
+              </div>
+              
+                <img src="/static/img/admin/reviews/2gis.svg?v=1" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+              
+              <button class="button button--white mt-3 reviewsCardBtn" data-src="#modalReviews"
+                data-bs-name="Виктория Антонова"
+                data-bs-date="30 октября 2025"
+                data-bs-id="273"
+                data-bs-text="<p>Покупала свой первый автомобиль, Hyundai Solaris из Кореи. Менеджер Андрей помог выбрать надежный вариант с хорошей комплектацией. Присылал подробные фото и видео каждой детали, честно указал на мелкие косметические недостатки. Машину пригнали в мой город точно в обещанную дату</p>"
+                
+                    data-bs-screen="/media/filer_public/3d/a7/3da7aaad-c3bf-4932-978a-77138fa6c750/screenshot_21.png"
+                
+                
+                    data-bs-source="/static/img/admin/reviews/2gis.svg?v=1"
+                
+                data-fancybox>Подробнее</button>
+            </div><!-- /reviewsCard -->
+          </div><!-- /reviewsSlide -->
+        
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const reviewModal= document.getElementById('modalReviews')
+        if (reviewModal) {
+            reviewButtons = document.querySelectorAll('.reviewsCardBtn')
+            reviewButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    const review_id = button.getAttribute('data-bs-id')
+                    
+                    const review_source = button.getAttribute('data-bs-source')
+                    const review_screen = button.getAttribute('data-bs-screen')
+                    const review_date = button.getAttribute('data-bs-date')
+                    const review_name = button.getAttribute('data-bs-name')
+                    const review_text = button.getAttribute('data-bs-text')
+        
+                    const reviewModalName = reviewModal.querySelector('#reviewName')
+                    const reviewModalDate = reviewModal.querySelector('#reviewDate')
+                    const reviewModalScreen = reviewModal.querySelector('#reviewScreen')
+                    const reviewModalText = reviewModal.querySelector('#reviewText')
+                    const reviewModalSource = reviewModal.querySelector('#reviewSource')
+                    const reviewModalSourceSecond = reviewModal.querySelector('#reviewSourceSecond')
+
+                    reviewModalName.textContent = review_name
+                    reviewModalDate.textContent = review_date
+                    reviewModalText.innerHTML = review_text
+                    reviewModalScreen.src = review_screen
+                    reviewModalSource.src = review_source
+                    reviewModalSourceSecond.src = review_source
+            });
+            
+        })}
+    });
+
+</script>
+
+  
+
+<section class="about sect">
+    <div class="aboutT">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="aboutContent">
+              <h2><a class="h2 aboutTitle text--white border-b-gray-4 sectHead pb-2" href="/about/">О компании</a></h2>
+              <div class="content text--white mb-4">
+                <p class="text--lg">
+                  С 2014 года предоставляем услуги по подбору, покупке и доставке любых автомобилей и спецтехники с
+                  аукционов Японии, Кореи, Китая, США, ОАЭ и Европы.
+                </p>
+                <p>
+                  Нам доверились уже более 10 000 клиентов с разных регионов России и стран СНГ. Среди наших
+                  клиентов -
+                  физические, юридическим лица, а также крупные муниципальные организации. Благодаря работе нашей
+                  компании
+                  только с проверенными аукционами и и перевозчиками, мы можем обеспечить нашим клиентам поставку
+                  качественной техники по самым доступным ценам.
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-4 flex-wrap">
+                <a class="button button--brown" href="/experience/">Привезенная техника</a>
+                <a class="text--link text--white text--lg fw-medium border-b-gray-4 pb-2 text--lg-sm-15"
+                  href="/contacts/">Контакты</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="aboutImgW" style="background-image: url(/static/img/admin/about/image.png);">
+              <div
+                class="d-flex gap-4 align-items-start align-items-lg-center justify-content-end flex-column-reverse flex-xl-row">
+                <a class="text--link text--white text--lg text--lg-sm-15 fw-medium border-b-gray-4 pb-2"
+                  href="/reviews/">Отзывы от реальных
+                  покупателей</a>
+                <div class="d-flex gap-2">
+                  <a href="https://yandex.ru/maps/org/yunion_avto/27467492309/reviews/?ll=82.948653%2C55.030287&amp;z=12" target="_blank">
+                    <img src="/static/img/admin/about/yandex.png?v=1" alt="yandex">
+                  </a>
+                  <a href="https://2gis.ru/krasnoyarsk/firm/70000001066436435/tab/reviews" target="_blank">
+                    <img src="/static/img/admin/about/2gis.png?v=1" alt="2gis">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aboutB">
+      <div class="container">
+        <div class="aboutAdvW">
+          <div class="row sectHead">
+            <div class="col">
+              <div class="h3 text--white">
+                Преимущества работы с нами:
+              </div>
+            </div>
+          </div>
+          <div class="row aboutAdvList">
+            <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+              <ul class="list-interactive list-interactive--white text--white fw-medium">
+                <li class="mb-4">
+                  <strong>Бесплатная консультация</strong> и&nbsp;просчёт стоимости
+                </li>
+                <li>
+                  <strong>Фиксированная цена и&nbsp;сроки</strong> в&nbsp;договоре
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+              <ul class="list-interactive list-interactive--white text--white fw-medium">
+                <li class="mb-4">
+                  <strong>Отчетные документы </strong> и&nbsp;информирование на&nbsp;каждом этапе
+                </li>
+                <li>
+                  <strong>Полная проверка </strong> перед покупкой и&nbsp;отправкой
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <ul class="list-interactive list-interactive--white text--white fw-medium">
+                <li class="mb-4">
+                  <strong>Решение любых вопросов</strong> с&nbsp;таможенным оформлением
+                </li>
+                <li>
+                  <strong>Доставка в&nbsp;любой регион </strong> России и&nbsp;СНГ
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+        
+
+
+<div class="navBar">
+
+  <div class="navBarLink-wrapper" id="navBarWrapper">
+    <a class="navBarLink" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <svg class="navBarIcon">
+        <use xlink:href="/static/img/icons/icons.svg?v=1#navbar-1"></use>
+      </svg>
+      <span class="navBarText">Каталог</span>
+    </a>
+  
+    <ul class="menu-dropdownitem-mobnav-list dropdown-menu">
+      <li class="menu-dropdownitem-mobnav-list-head">
+        Каталог
+        <img id="mobNavCloseBtn" src="/static/img/icons/close.svg?v=1" alt="close.svg">
+      </li>
+      <li class="menu-dropdownitem-mobnav-list-el">
+          <a href="/catalog/japan/">
+          <img src="/static/img/admin/flag/jap24.svg?v=1" alt="jap24.svg">Япония
+          </a>
+      </li>
+      <li class="menu-dropdownitem-mobnav-list-el">
+          <a href="/catalog/korea/">
+          <img src="/static/img/admin/flag/kor24.svg?v=1" alt="kor24.svg">Корея
+          </a>
+      </li>
+      <li class="menu-dropdownitem-mobnav-list-el">
+        <a href="/catalog/truck/">
+        <img class="img-gruz" src="/static/img/admin/flag/truck.png?v=1" alt="truck.png">Грузовики
+        </a>
+      </li>
+      <li class="menu-dropdownitem-mobnav-list-el">
+          <a href="/catalog/machinery/">
+          <img class="img-gruz" src="/static/img/admin/flag/gruz.png?v=1" alt="gruz.png">Спецтехника
+          </a>
+      </li>
+    </ul>
+  </div>
+
+  <a class="navBarLink" href="https://t.me/+79510068050">
+    <svg class="navBarIcon">
+      <use xlink:href="/static/img/icons/icons.svg?v=1#navbar-2"></use>
+    </svg>
+    <span class="navBarText">Написать</span>
+  </a>
+  <a class="navBarLink" href="tel:88006007966">
+    <svg class="navBarIcon">
+      <use xlink:href="/static/img/icons/icons.svg?v=1#navbar-3"></use>
+    </svg>
+    <span class="navBarText">Позвонить</span>
+  </a>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const navBarWrapper = document.querySelector('#navBarWrapper');
+    const btnNavClose = document.querySelector('#mobNavCloseBtn');
+    const navBarLink = document.querySelector('.navBarLink');
+    const dropMenu = document.querySelector('.menu-dropdownitem-mobnav-list');
+    const updateNavBarVisibility = (isVisible) => {
+        navBarWrapper.classList.toggle('active', isVisible);
+        if (navBarLink) {
+            navBarLink.classList.toggle('show', isVisible);
+            navBarLink.setAttribute('aria-expanded', isVisible.toString());
+            dropMenu.classList.toggle('show', isVisible);
+        }
+    };
+    navBarWrapper.addEventListener('click', (e) => {
+        e.stopPropagation();
+        updateNavBarVisibility(!navBarWrapper.classList.contains('active'));
+    });
+    btnNavClose.addEventListener('click', (e) => {
+        e.stopPropagation();
+        updateNavBarVisibility(false);
+    });
+});
+</script>
+
+    </main>
+
+    
+
+
+<footer class="footer" id="footer">
+    <div class="container">
+      <div class="row mb-5 ">
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <nav class="footerNav text--white">
+            <h5 class="h5 fw-semibold navTitle mb-3">
+              Услуги
+            </h5>
+            <ul class="fw-medium">
+              <li>
+                <a href="/services/auction/japan/">
+                  Автомобили с аукционов Японии
+                </a>
+              </li>
+              <li>
+                <a href="/services/auction/china/">
+                  Автомобили с аукционов Китая
+                </a>
+              </li>
+              <li>
+                <a href="/services/auction/korea/">
+                  Автомобили с аукционов Кореи
+                </a>
+              </li>
+              <li>
+                <a href="/services/auction/machinery/">
+                  Спецтехника с аукционов Японии
+                </a>
+              </li>
+              <li>
+                <a href="/services/auction/tax/">
+                  Ввоз автомобиля под полную пошлину
+                </a>
+              </li>
+              <li>
+                <a href="/services/auction/vladivostok/">
+                  Доставка автомобилей из Владивостока
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <nav class="footerNav text--white">
+                <h5 class="h5 fw-semibold navTitle mb-3">
+                  Каталог
+                </h5>
+                <ul class="fw-medium">
+                  <li>
+                    <a href="/catalog/japan/">
+                      Авто из Японии
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/catalog/korea/">
+                      Авто из Кореи
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/catalog/machinery/">
+                      Спецтехника
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-6">
+              <nav class="footerNav text--white">
+                <ul class="fw-semibold text--lg">
+                  <li class="mb-4">
+                    <a href="/about/">
+                      Компания
+                    </a>
+                  </li>
+                  <li class="mb-4">
+                    <a href="/reviews/">
+                      Отзывы
+                    </a>
+                  </li>
+                  <li class="mb-4">
+                    <a href="/articles/">
+                      Информация
+                    </a>
+                  </li>
+                  <li class="mb-4">
+                    <a href="/contacts/">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="color-gray4 mb-2 fw-bold">Телефон:</div>
+          <a href="tel:88006007966" class="footerPhone text--white fw-medium">88006007966</a>
+          <div class="color-gray4 mb-2 fw-medium text--13 mb-4">звонок по России бесплатно</div>
+          <div class="color-gray4 mb-2 fw-bold">Свяжитесь с нами:</div>
+          <ul class="d-flex gap-3 socials socials--gray">
+            <li>
+              <a href="https://vk.com/im?sel=-217530050" target="_blank">
+                <svg>
+                  <use xlink:href="/static/img/icons/icons.svg?v=1#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/+79510068050" target="_blank">
+                <svg>
+                  <use xlink:href="/static/img/icons/icons.svg?v=1#whatsapp-call"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/+79510068050" target="_blank">
+                <svg>
+                  <use xlink:href="/static/img/icons/icons.svg?v=1#telegram-call"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="color-gray4 mb-2 mt-4 fw-bold">Мы в соцсетях:</div>
+          <div class="d-flex align-items-center gap-2 socials">
+            <a href="https://youtube.com/@unionauto125?si=Z8KSysAUg7h9c0e3" class="socialLink" target="_blank">
+              <img src="/static/img/admin/socials/icon-1.svg?v=1" alt="icon">
+            </a>
+            <a href="https://vk.com/unionauto_org" class="socialLink" target="_blank">
+              <img src="/static/img/admin/socials/icon-2.svg?v=1" alt="icon">
+            </a>
+            <a href="https://www.instagram.com/unionauto_org?igsh=OHF4eDdrOW1nbWlz" class="socialLink" target="_blank">
+              <img src="/static/img/admin/socials/icon-3.svg?v=1" alt="icon">
+            </a>
+          </div><!-- /socials -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 mb-3 mb-lg-0">
+          <span class="text--white text--sm fw-medium">© 2026 «Union Auto»</span>
+        </div>
+        <div class="col-lg-4 mb-3 mb-lg-0">
+          <a class="text--white text--sm text-start text-lg-center fw-medium footerPolitic" href="/personal_data/">Политика
+            обработки
+            персональных
+            данных</a>
+        </div>
+        <div class="col-lg-4 mb-3 mb-lg-0">
+          <a class="d-flex align-items-center gap-2 justify-content-start justify-content-lg-end footerDevelop"
+            href="https://xn--80adei2bu.xn--p1ai/">
+            <img src="/static/img/icons/develop.svg?v=1" alt="logo">
+            <span class="fw-medium text--white text--sm"> Разработка сайта – Вангер.рф </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+    
+
+<div class="navFixed" id="navFixed">
+    <ul>
+      <li>
+        <a href="https://vk.com/im?sel=-217530050" target="_blank">
+          <svg>
+            <use xlink:href="/static/img/icons/icons.svg?v=1#vk-round"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/+79510068050" target="_blank">
+          <svg>
+            <use xlink:href="/static/img/icons/icons.svg?v=1#whatsapp-round"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://t.me/+79510068050" target="_blank">
+          <svg>
+            <use xlink:href="/static/img/icons/icons.svg?v=1#telegram-round"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+    
+
+<div class="modal" id="modalOrder">
+
+    <div class="modalHead">
+      <h2 class="h2">Оставьте заявку</h2>
+      <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24" tabindex="-1">
+          <path d="M20 20L4 4m16 0L4 20"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="modalContent">
+      <div class="align-self-center loader">
+        <img src="/static/img/icons/loader.svg" alt="loader">
+      </div>
+      <form class='request-form'>
+        <p class="modalDescr">
+          Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+        </p>
+        <div class="modalForm">
+        
+          <input type="hidden" name="csrfmiddlewaretoken" value="SebuphtsSKjBc4miQ0vyReD44IXpoAu38eOEVAco2tAM9Opiq4FeQOb2Cj8FNpqK">
+          <input name="time" class="local-time-input" type="hidden">
+          <div class="inputW form-floating mb-2">
+            <input name="name" type="text" class="form-control formInput" placeholder="Ваше имя" id="modalOrderText" required>
+            <label for="modalOrderText">Ваше имя</label>
+            <button class="clear" type="button"><img src="/static/img/icons/clear.svg?v=1" alt="clear"></button>
+          </div>
+
+          <div class="inputW form-floating mb-2">
+            <input name="phone" type="tel" class="form-control formInput" placeholder="Телефон" id="modalOrderPhone" required pattern="\d{1}\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}">
+            <label for="modalOrderPhone">Телефон</label>
+            <button class="clear" type="button"><img src="/static/img/icons/clear.svg?v=1" alt="clear"></button>
+          </div>
+
+          <div class="agreement">
+            <input type="checkbox" name="agreement" class="me-2" id="agreementModalForm" required>
+            <label for="agreementModalForm">Даю согласие на обработку своих</label>
+            <a href="/personal_data/" target="_blank"> персональных данных.</a>
+          </div>
+
+          <button type="submit" class="button button--brown formBtn w-100">
+            Отправить заявку
+          </button>
+        </form>
+      </div>
+      <div class="agreement"></div>
+    </div>
+  </div>
+    
+
+<div class="modal" id="modalOrderBudget">
+
+    <div class="modalHead">
+      <h2 class="h2">Подберем подобный лот под ваш бюджет</h2>
+      <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24" tabindex="-1">
+          <path d="M20 20L4 4m16 0L4 20"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="modalContent">
+      <div class="align-self-center loader">
+        <img src="/static/img/icons/loader.svg" alt="loader">
+      </div>
+      <form class='request-form'>
+        <p class="modalDescr">
+          Укажите ваши пожелания и наши менеджеры подберут для вас подходящие варианты
+        </p>
+        <div class="modalForm">
+        
+          <input type="hidden" name="csrfmiddlewaretoken" value="SebuphtsSKjBc4miQ0vyReD44IXpoAu38eOEVAco2tAM9Opiq4FeQOb2Cj8FNpqK">
+          <input name="time" class="local-time-input" type="hidden">
+          <div class="inputW form-floating mb-2">
+            <input name="name" type="text" class="form-control formInput" placeholder="Ваше имя" id="modalOrderText" required>
+            <label for="modalOrderText">Ваше имя</label>
+            <button class="clear" type="button"><img src="/static/img/icons/clear.svg?v=1" alt="clear"></button>
+          </div>
+
+          <div class="inputW form-floating mb-2">
+            <input name="phone" type="tel" class="form-control formInput" placeholder="Телефон" id="modalOrderPhone" required pattern="\d{1}\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}">
+            <label for="modalOrderPhone">Телефон</label>
+            <button class="clear" type="button"><img src="/static/img/icons/clear.svg?v=1" alt="clear"></button>
+          </div>
+
+          <div class="inputW form-floating mb-2">
+            <input name="budget" type="text" class="form-control formInput" placeholder="Ваше имя" id="modalOrderBudget" required>
+            <label for="modalOrderBudget">Бюджет</label>
+            <button class="clear" type="button"><img src="/static/img/icons/clear.svg?v=1" alt="clear"></button>
+          </div>
+        
+          <div class="inputW form-floating mb-2">
+            <textarea name="comment" class="form-control formInput" placeholder="Ваше имя" id="modalOrderComment" style="min-height: 80px;"></textarea>
+            <label for="modalOrderComment">Комментарий</label>
+            <button class="clear" type="button"><img src="/static/img/icons/clear.svg?v=1" alt="clear"></button>
+          </div>
+
+          <div class="agreement">
+            <input type="checkbox" name="agreement" class="me-2" id="agreementBudgetForm" required>
+            <label for="agreementBudgetForm">Даю согласие на обработку своих</label>
+            <a href="/personal_data/" target="_blank"> персональных данных.</a>
+          </div>
+
+          <button type="submit" class="button button--brown formBtn w-100">
+            Отправить
+          </button>
+
+        </form>
+      </div>
+      <div class="agreement"></div>
+    </div>
+  </div>
+    
+
+<div class="modal" id="modalFreeTo">
+
+    <div class="modalHead">
+      <h2 class="h2">Бесплатное ТО при покупке до конца года!</h2>
+      <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24" tabindex="-1">
+          <path d="M20 20L4 4m16 0L4 20"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="modalContent">
+      <div class="align-self-center loader">
+        <img src="/static/img/icons/loader.svg" alt="loader">
+      </div>
+      <form class='request-form'>
+        <p class="modalDescr">
+            По прибытии техники во Владивосток Union Auto проведёт бесплатную диагностику и замену всех технических жидкостей
+        </p>
+        <div class="modalForm">
+        
+          <input type="hidden" name="csrfmiddlewaretoken" value="SebuphtsSKjBc4miQ0vyReD44IXpoAu38eOEVAco2tAM9Opiq4FeQOb2Cj8FNpqK">
+          <input name="time" class="local-time-input" type="hidden">
+          <div class="inputW form-floating mb-2">
+            <input name="name" type="text" class="form-control formInput" placeholder="Ваше имя" id="modalOrderText" required>
+            <label for="modalOrderText">Ваше имя</label>
+            <button class="clear" type="button"><img src="/static/img/icons/clear.svg?v=1" alt="clear"></button>
+          </div>
+
+          <div class="inputW form-floating mb-2">
+            <input name="phone" type="tel" class="form-control formInput" placeholder="Телефон" id="modalOrderPhone" required pattern="\d{1}\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}">
+            <label for="modalOrderPhone">Телефон</label>
+            <button class="clear" type="button"><img src="/static/img/icons/clear.svg?v=1" alt="clear"></button>
+          </div>
+
+          <div class="agreement">
+            <input type="checkbox" name="agreement" class="me-2" id="agreementFreeForm" required>
+            <label for="agreementFreeForm">Даю согласие на обработку своих</label>
+            <a href="/personal_data/" target="_blank"> персональных данных.</a>
+          </div>
+
+          <button type="submit" class="button button--brown formBtn w-100">
+            Отправить заявку
+          </button>
+
+        </form>
+      </div>
+      <div class="agreement"></div>
+    </div>
+  </div>
+    
+
+<div class="modal" id="modalBestPrice">
+
+    <div class="modalHead">
+      <h2 class="h2">Оставьте заявку</h2>
+      <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24" tabindex="-1">
+          <path d="M20 20L4 4m16 0L4 20"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="modalContent">
+      <div class="align-self-center loader">
+        <img src="/static/img/icons/loader.svg" alt="loader">
+      </div>
+      <form class='request-form' enctype="multipart/form-data">
+        <p class="modalDescr">
+          Оставьте заявку и прикрепите предложение от другой компании
+        </p>
+        <div class="modalForm">
+        
+          <input type="hidden" name="csrfmiddlewaretoken" value="SebuphtsSKjBc4miQ0vyReD44IXpoAu38eOEVAco2tAM9Opiq4FeQOb2Cj8FNpqK">
+          <input name="time" class="local-time-input" type="hidden">
+          <div class="inputW form-floating mb-2">
+            <input name="name" type="text" class="form-control formInput" placeholder="Ваше имя" id="modalOrderText" required>
+            <label for="modalOrderText">Ваше имя</label>
+            <button class="clear" type="button"><img src="/static/img/icons/clear.svg?v=1" alt="clear"></button>
+          </div>
+
+          <div class="inputW form-floating mb-2">
+            <input name="phone" type="tel" class="form-control formInput" placeholder="Телефон" id="modalOrderPhone" required pattern="\d{1}\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}">
+            <label for="modalOrderPhone">Телефон</label>
+            <button class="clear" type="button"><img src="/static/img/icons/clear.svg?v=1" alt="clear"></button>
+          </div>
+          
+          <div class="inputW mb-2">
+            <input name="file" type="file" class="form-control" id="modalOrderFile" accept=".pdf, .jpg, .png, .doc, .docx, .xls, .xlsx" required>
+          </div>
+
+          <div class="inputW form-floating mb-2">
+            <textarea name="comment" class="form-control formInput" placeholder="Ваше имя" id="modalOrderComment" style="min-height: 80px;"></textarea>
+            <label for="modalOrderComment">Комментарий</label>
+            <button class="clear" type="button"><img src="/static/img/icons/clear.svg?v=1" alt="clear"></button>
+          </div>
+
+          <div class="agreement">
+            <input type="checkbox" name="agreement" class="me-2" id="agreementBestPriceForm" required>
+            <label for="agreementBestPriceForm">Даю согласие на обработку своих</label>
+            <a href="/personal_data/" target="_blank"> персональных данных.</a>
+          </div>
+
+          <button type="submit" class="button button--brown formBtn w-100">
+            Отправить
+          </button>
+        </form>
+      </div>
+      <div class="agreement"></div>
+    </div>
+  </div>
+    
+<div class="modal" id="modalReviews">
+
+    <div class="modalHead">
+      <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24" tabindex="-1">
+          <path d="M20 20L4 4m16 0L4 20"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modalContent">
+      <div class="modalGrid">
+        <div class="modalLeft">
+          <img id="reviewScreen" src="" alt="image" class="reviewsImg">
+        </div>
+        <div class="modalRight">
+          <div class="reviewsCard bg-transparent cardText pt-5 pt-md-0 px-0">
+            <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+              <div class="d-flex align-items-center gap-1">
+                <img src="/static/img/icons/avatar.svg?v=1" alt="person" class="reviewsCardPersonIcon">
+                <div class="d-block">
+                  <span id="reviewName" class="fw-medium d-block text--lg">1</span>
+                  <span id="reviewDate" class="fw-medium d-block text--15 color-gray5 "></span>
+                </div>
+              </div>
+              <img id="reviewSource" src="" alt="logo" class="reviewsCardLogo d-none d-sm-block">
+            </div>
+            <div id="reviewText" class="content my-1">
+              <p>
+                Решил купить себе машину, но после неудачных поисков на «дром» решил заказать машину из Японии и не
+                пожалел. Был
+                подобран один из лучших вариантов желаемой машины. От начала поисков машины и до заветного получения
+                ключей
+                курировал менеджер Антон, грамотный, отзывчивый, позитивно настроенный специалист своего дела, который
+                помогал с
+                любым вопросом.
+              </p>
+              <p>
+                Так же хотелось отметить логиста Ксению, которая так же помогала с доставкой авто, решением проблем
+                переводов и
+                оплат счетов. Машина приехала с Японии быстро, без единых царапин(все как японец передал). Так же
+                порадовало что в
+                салоне было все чистенько, повесили фирменную вонючку, с ключами был фирменный брелок(мелочь, но
+                приятно),
+                теперь
+                этот брелок будет напоминать о том от куда у меня появилась эта машина и какую работу проделала данная
+                компания!
+              </p>
+            </div>
+            <img id="reviewSourceSecond" src="" alt="logo" class="reviewsCardLogo d-block d-sm-none my-4">
+
+          </div><!-- /reviewsCard -->
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+    
+
+<!-- Telegram Popup -->
+<div id="telegram-popup-overlay" class="telegram-popup-overlay" style="display: none;">
+  <div id="telegram-popup" class="pum-container telegram-popup-container">
+    <div class="pum-content telegram-popup-content" tabindex="0">
+      <p style="text-align: center; display: flex; justify-content: center;">
+        <img decoding="async" class="td-logo" src="/static/img/admin/logo/logo.svg" alt="Logo">
+      </p>
+      <p>&nbsp;</p>
+      <p style="text-align: center;">
+        <span style="font-size: 24px; color: white; font-family: arial, helvetica, sans-serif;">
+          Только для подписчиков нашего Telegram-канала:
+        </span>
+      </p>
+      <p style="text-align: center;">
+        <span style="font-size: 18px; color: #d6d5d2; font-family: arial, helvetica, sans-serif;">
+          Эксклюзивные автомобили и предложения, которые вы не найдете нигде!
+        </span>
+      </p>
+      <p>&nbsp;</p>
+      <p style="text-align: center;">
+        <span style="font-family: helvetica, arial, sans-serif;">
+          <button style="background-color: #998659; color: white; cursor: pointer; border: none; padding: 20px; font-size: 20px; user-select: none;">
+            <a style="text-decoration: none; color: white; cursor: pointer; user-select: none;" href="https://t.me/unionautorussia" target="_blank" rel="noopener noreferrer">
+              <span style="font-family: arial, helvetica, sans-serif;">Присоединяйтесь!</span>
+            </a>
+          </button>
+        </span>
+      </p>
+	    <p>&nbsp;</p>
+    </div>
+
+    <button type="button" class="pum-close telegram-popup-close" aria-label="Закрыть" id="telegram-popup-close">
+      X
+    </button>
+  </div>
+</div>
+
+<style>
+/* Overlay */
+.telegram-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.telegram-popup-overlay.active {
+  opacity: 1;
+}
+
+/* Container */
+.telegram-popup-container {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  padding: 18px;
+  border-radius: 0px;
+  border: 1px none #000000;
+  box-shadow: 1px 1px 3px 0px rgba(2, 2, 2, 0.23);
+  background-color: rgba(43, 43, 43, 1.00);
+  transform: scale(0.7);
+  transition: transform 0.3s ease;
+}
+
+.telegram-popup-overlay.active .telegram-popup-container {
+  transform: scale(1);
+}
+
+/* Content */
+.telegram-popup-content {
+  color: #8c8c8c;
+  font-family: inherit;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+
+.telegram-popup-content p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.telegram-popup-content .td-logo {
+  display: block;
+  min-width: 180px;
+  width: 180px;
+  max-width: 100%;
+}
+
+/* Close button */
+.telegram-popup-close {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: auto;
+  right: 0px;
+  bottom: auto;
+  top: 0px;
+  padding: 0px;
+  color: #ffffff;
+  font-family: Archivo, sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 36px;
+  border: 1px none #ffffff;
+  border-radius: 0px;
+  box-shadow: -50px -50px 3px -100px rgba(2, 2, 2, 0.00) inset;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.23);
+  background-color: rgba(198, 172, 108, 0.00);
+  cursor: pointer;
+  z-index: 2;
+  transition: color 0.2s;
+}
+
+.telegram-popup-close:hover {
+  color: #c6ac6c;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .telegram-popup-content .td-logo {
+    min-width: 182px;
+    width: 182px;
+  }
+}
+
+@media (max-width: 576px) {
+  .telegram-popup-container {
+    width: 95%;
+    padding: 15px;
+  }
+  
+  .telegram-popup-content span {
+    font-size: 18px !important;
+  }
+  
+  .telegram-popup-content span:first-of-type {
+    font-size: 20px !important;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const POPUP_STORAGE_KEY = 'telegram_popup_shown';
+  const overlay = document.getElementById('telegram-popup-overlay');
+  const closeBtn = document.getElementById('telegram-popup-close');
+  
+  // Проверяем, показывался ли поп-ап ранее
+  const popupShown = localStorage.getItem(POPUP_STORAGE_KEY);
+  
+  if (!popupShown) {
+    // Показываем поп-ап с небольшой задержкой для плавности
+    setTimeout(function() {
+      overlay.style.display = 'flex';
+      setTimeout(function() {
+        overlay.classList.add('active');
+      }, 10);
+    }, 1000);
+  }
+  
+  // Функция закрытия поп-апа
+  function closePopup() {
+    overlay.classList.remove('active');
+    setTimeout(function() {
+      overlay.style.display = 'none';
+    }, 300);
+    // Сохраняем в localStorage, что поп-ап был показан
+    localStorage.setItem(POPUP_STORAGE_KEY, 'true');
+  }
+  
+  // Закрытие по клику на кнопку
+  closeBtn.addEventListener('click', closePopup);
+  
+  // Закрытие по клику на overlay (вне контейнера)
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) {
+      closePopup();
+    }
+  });
+  
+  // Закрытие по нажатию Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) {
+      closePopup();
+    }
+  });
+});
+</script>
+
+</div>
+
+<div class="cookie" id="elCookieNotification">
+    <div class="cookie__content">
+        <div class="cookie__col text--white">Используя данный сайт, вы соглашаетесь на использование <a href="/personal_data/" target="_blank"> файлов куки</a></div>
+        <button class="btn-cookie button button--brown mt-2 js-cookie-accept">Согласиться</button>
+    </div>
+</div>
+
+<script src="/static/js/app.min.js?v=5"></script>
+<script>
+    const placeholderImageUrl = "/static/img/image-1.jpg?v=1";
+
+    function isTinyImage(img) {
+        const width = Number(img.naturalWidth || 0);
+        const height = Number(img.naturalHeight || 0);
+
+        if (!width || !height) {
+            return true;
+        }
+
+        if (width <= 1 && height <= 1) {
+            return true;
+        }
+
+        return (width * height) <= 4;
+    }
+
+    function setPlaceholder(imageEl) {
+        if (!imageEl) return;
+        if (imageEl.src && placeholderImageUrl && imageEl.src.indexOf(placeholderImageUrl) !== -1) return;
+        imageEl.src = placeholderImageUrl;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('.catalogCardImg img');
+        images.forEach(function(img) {
+            img.addEventListener('error', function() {
+                setPlaceholder(img);
+            });
+            img.addEventListener('load', function() {
+                if (isTinyImage(img)) {
+                    setPlaceholder(img);
+                }
+            });
+            if (img.complete && isTinyImage(img)) {
+                setPlaceholder(img);
+            }
+        });
+    });
+
+    window.addEventListener('load', function() {
+        const productWrappers = document.querySelectorAll('.productSliderW');
+        productWrappers.forEach(function(wrapper) {
+            const mainSwiperEl = wrapper.querySelector('.productSlider');
+            const thumbSwiperEl = wrapper.querySelector('.productThumbSlider');
+            const mainWrapperEl = mainSwiperEl ? mainSwiperEl.querySelector('.swiper-wrapper') : null;
+            const thumbWrapperEl = thumbSwiperEl ? thumbSwiperEl.querySelector('.swiper-wrapper') : null;
+
+            if (!mainWrapperEl) return;
+
+            const mainSlides = Array.from(mainWrapperEl.querySelectorAll('.swiper-slide'));
+            const thumbSlides = thumbWrapperEl ? Array.from(thumbWrapperEl.querySelectorAll('.swiper-slide')) : [];
+
+            const removeIndexes = [];
+            mainSlides.forEach(function(slide, idx) {
+                const img = slide.querySelector('img');
+                if (!img || isTinyImage(img)) {
+                    removeIndexes.push(idx);
+                }
+            });
+
+            removeIndexes.sort(function(a, b) { return b - a; }).forEach(function(idx) {
+                const slide = mainSlides[idx];
+                if (slide && slide.parentNode) slide.parentNode.removeChild(slide);
+
+                const thumb = thumbSlides[idx];
+                if (thumb && thumb.parentNode) thumb.parentNode.removeChild(thumb);
+            });
+
+            const remainingSlides = mainWrapperEl.querySelectorAll('.swiper-slide');
+            if (!remainingSlides.length) {
+                const mainSlide = document.createElement('a');
+                mainSlide.className = 'swiper-slide productSlide';
+                mainSlide.setAttribute('data-fancybox', 'gallery');
+                mainSlide.href = placeholderImageUrl;
+                mainSlide.innerHTML = '<img src="' + placeholderImageUrl + '" alt="image">';
+                mainWrapperEl.appendChild(mainSlide);
+
+                if (thumbWrapperEl) {
+                    const thumbSlide = document.createElement('div');
+                    thumbSlide.className = 'swiper-slide productThumbSlide';
+                    thumbSlide.innerHTML = '<img src="' + placeholderImageUrl + '" alt="image">';
+                    thumbWrapperEl.appendChild(thumbSlide);
+                }
+            }
+
+            if (mainSwiperEl && mainSwiperEl.swiper) {
+                mainSwiperEl.swiper.update();
+            }
+            if (thumbSwiperEl && thumbSwiperEl.swiper) {
+                thumbSwiperEl.swiper.update();
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+        if (timeZone) {
+            const inputs = document.querySelectorAll('.local-time-input');
+
+            inputs.forEach(input => {
+                input.value = timeZone;
+            });
+        }
+    });
+
+    $(".request-form input, .request-form textarea").on('input', function () {
+        if (!formStarted) {
+            formStarted = true;
+            ym(91395761, 'reachGoal', 'fill');
+        }
+    });
+
+    $(".request-form").submit(function (event) {
+        event.preventDefault()
+
+        const defaultActionUrl = "/consultation/"
+        const defaultOnErrorMessage = "Ошибка!<br>Не удалось отправить форму."
+        const successMessage = "Ваша заявка принята!<br>Свяжемся с вами в ближайшее время."
+        const form = $(this)
+        const loader = form.prev()
+        const status = form.next()
+
+        let actionUrl = form.attr("action")
+        if (actionUrl === undefined) {
+            actionUrl = defaultActionUrl
+        }
+
+        let onErrorMessage = form.data("on-error-message")
+        if (onErrorMessage === undefined) {
+            onErrorMessage = defaultOnErrorMessage
+        }
+
+        form.hide()
+        loader.show()
+
+        const formData = new FormData(form[0]);
+        $.ajax({
+            url: actionUrl,
+            type: 'POST',
+            data: formData,
+            processData: false,  // Отключаем обработку данных jQuery
+            contentType: false,  // Отключаем установку content-type
+            success: function () {
+                loader.hide();
+                status.html(successMessage).addClass('fw-bold');
+                status.show();
+                ym(91395761, 'reachGoal', 'success');
+
+                // Убираем background у псевдоэлемента ::before
+                $('.callbackW--linear-white').removeClass('callbackW--linear-white');
+            },
+            error: function () {
+                loader.hide();
+                status.html(onErrorMessage);
+                status.show();
+            }
+        });
+    })
+</script>
+
+
+</body>
+
+</html>
+

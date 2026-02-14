@@ -1,0 +1,47 @@
+/* Text Details Section */
+.details-text {
+    padding: 8rem 0;
+    background: var(--color-void);
+    color: var(--color-chrome);
+}
+
+.text-block {
+    margin-bottom: 6rem;
+    border-left: 2px solid var(--color-rust);
+    padding-left: 2rem;
+}
+
+.text-block h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-signal);
+}
+
+.text-block p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    font-family: var(--font-body);
+}
+
+/* Button override */
+.btn-primary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--color-rust);
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-tech);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: 1px solid var(--color-rust);
+    transition: all 0.3s;
+    margin-top: 2rem;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--color-rust);
+    box-shadow: 0 0 20px rgba(204, 51, 0, 0.4);
+}
